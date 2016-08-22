@@ -1,15 +1,14 @@
-
-
 Before do
 
-  @browser = Watir::Browser.new :chrome
-  @browser.window.maximize
+  @browser = Watir::Browser.new :ff
+
 
 end
 
 
 After do
-  @browser.quit
+ @browser.window.maximize
+ # @browser.quit
 end
 
 
